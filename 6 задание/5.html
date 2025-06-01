@@ -1,0 +1,224 @@
+<html>
+    <head>
+        <title>Travel Agency</title>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+
+            header {
+                background: linear-gradient(to right, #BBE7FA 0%, white 50%, #BBE7FA 100%);
+                position: relative;
+                overflow: hidden;
+                text-align: center;
+                padding: 50px 0;
+            }
+
+            header h1 {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-weight: normal;
+                margin: 0;
+                position: relative;
+                z-index: 1;
+            }
+
+            header::before {
+                content: "TA";
+                position: absolute;
+                font-size: 120px;
+                opacity: 0.3;
+                font-weight: bold;
+                color: #000;
+                top: 50%;
+                left: 30%;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+
+            h2 {
+                color: #EB722E;
+                font-size: 18px;
+                font-weight: normal;
+                margin: 30px 30px 10px 30px;
+            }
+
+            .content-wrapper {
+                display: flex;
+                margin: 0 30px;
+                flex-wrap: wrap;
+            }
+
+            .videos {
+                flex: 1;
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 15px;
+                min-width: 0;
+            }
+
+            .video-container {
+                position: relative;
+                padding-bottom: 56.25%;
+                height: 0;
+                overflow: hidden;
+                background: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                width: 100%;
+            }
+
+            .video-container iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+
+            .side-text {
+                width: 200px;
+                margin-left: 30px;
+                padding: 20px;
+                border: 5px solid #2E268B;
+                border-radius: 10px;
+                background-color: white;
+                margin-top: 15px;
+            }
+
+            .side-text h3 {
+                font-size: 25px;
+                font-weight: normal;
+                margin: 0;
+                text-align: center;
+            }
+
+            .side-text a {
+                font-size: 20px;
+                color: black;
+                text-align: center;
+                text-decoration: none;
+                display: block;
+                margin-bottom: 8px;
+                margin-top: 60px;
+            }
+
+            .side-text a span {
+                border-bottom: 2px dotted blue;
+            }
+
+            .small-videos {
+                display: flex;
+                gap: 15px;
+                flex-wrap: wrap;
+                margin: 0 30px 30px;
+            }
+
+            .small-videos .video-container {
+                width: 300px;
+                height: 170px;
+                position: relative;
+                overflow: hidden;
+                background: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding-bottom: 0;
+            }
+
+            .small-videos .video-container iframe {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                border: none;
+            }
+
+            .single-video {
+                margin: 0 30px;
+            }
+
+            .single-video .video-container {
+                width: 300px;
+                height: 170px;
+                position: relative;
+                overflow: hidden;
+                background: #f5f5f5;
+                border: 1px solid #ddd;
+                border-radius: 4px;
+                padding-bottom: 0;
+                margin: 0;
+            }
+
+            .single-video .video-container iframe {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+            
+            footer {
+                margin: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Travel Agency</h1>
+        </header>
+        <main>
+            <h2>Любите экскурсии?</h2>
+            <div class="content-wrapper">
+                <div class="videos">
+                    <div class="video-container">
+                        <iframe src="https://vkvideo.ru/video_ext.php?oid=-228492838&id=456239190&hash=2364666d324d3425"></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://vkvideo.ru/video_ext.php?oid=304818991&id=456245216&hash=cba3d9006768ed76"></iframe>
+                        
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://vkvideo.ru/video_ext.php?oid=-227626954&id=456239084&hash=49a6c144899c740d"></iframe>
+                    </div>
+                    <div class="video-container">
+                        <iframe src="https://vkvideo.ru/video_ext.php?oid=-228692916&id=456239021&hash=7fc28d77378ef687"></iframe>
+                    </div>
+                </div>
+
+                <div class="side-text">
+                    <h3>Полезные <br> ссылки</h3>
+                    <a href=""><span>Билеты</span></a>
+                    <a href=""><span>Отели</span></a>
+                    <a href=""><span>Чек-лист</span></a>
+                </div>
+            </div>
+
+            <h2>Хотите на море?</h2>
+            <div class="small-videos">
+                <div class="video-container">
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-228927428&id=456239132&hash=0c146a5e8a8fd676"></iframe>
+                </div>
+                <div class="video-container">
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-211397633&id=456245476&hash=f91c948b63f54c3b"></iframe>
+                </div>
+            </div>
+
+            <h2>Всего понемногу?</h2>
+            <div class="single-video">
+                <div class="video-container">
+                    <iframe src="https://vkvideo.ru/video_ext.php?oid=-48677005&id=456240817&hash=95caed1310717f7b"></iframe>
+
+                </div>
+            </div>
+            <hr style="border: none; height: 5px; background-color: #2E671F; margin: 40px 0;">
+        </main>
+        <footer>
+            <h1>Напиши - получи скидку!</h1>
+            <a href=""><img src="https://static.tildacdn.com/tild6266-3366-4933-b934-663835633131/vkontakte.png" alt="VK" width="100"></a>
+        </footer>
+    </body>
+</html>

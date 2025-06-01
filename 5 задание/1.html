@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+            }
+            .container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 50px;
+                max-width: 1000px;
+                margin: 0 auto;
+            }
+            .text {
+                width: 300px;
+            }
+            .text p {
+                color: lightblue;
+                font-size: 30px;
+            }
+            .text p:hover {
+                font-size: 45px;
+                color: navy;
+            }
+            .text .right:hover {
+                color: darkorange;
+            }
+            .text em {
+                display: block;
+                text-align: right;
+            }
+            nav {
+                text-align: right;
+                padding-bottom: 25px;
+                border-bottom: 1px dashed black;
+            }
+            nav a {
+                color: royalblue;
+                margin: 10px;
+                text-decoration: none;
+            }
+            h1 {
+                font-size: 40px;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .g-conteiner {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0px;
+                width: 500px;
+            }
+            .img-wrapper {
+                width: 130px;
+                height: 230px;
+                position: relative;
+                overflow: visible;
+            }
+            .img-wrapper img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 0.5;
+            }
+            .img-wrapper:hover img {
+                opacity: 1;
+                padding: 20px;
+                border: 3px solid navy;
+                z-index: 10;
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        <nav><a href="">Сезонные акции</a> <a href="">Контакты</a></nav>
+        <h1>Горные экскурсии</h1>
+        <div class="container">
+            <div class="g-conteiner">
+                
+                <div class="img-wrapper">
+                    <img src="https://i.pinimg.com/736x/d5/6b/d7/d56bd7e315286a7e8e014553ae527127.jpg">
+                </div>
+                <div class="img-wrapper">    
+                    <img src="https://i.pinimg.com/736x/7a/d1/ee/7ad1ee135239cf9b87e7c976095f2939.jpg">
+                </div> 
+                <div class="img-wrapper">
+                    <img src="https://i.pinimg.com/736x/9a/3c/6e/9a3c6ea763248e5d6eba85ca0cb32de5.jpg">
+                </div>
+                <div class="img-wrapper">                   
+                    <img src="https://i.pinimg.com/736x/23/e4/02/23e402e88c9b875b0dd5a1401d24b091.jpg">
+                </div>   
+                <div class="img-wrapper">
+                    <img src="https://i.pinimg.com/736x/3c/c4/a8/3cc4a8e5cdffa9425be7bf865c06eb74.jpg">
+                </div>
+                <div class="img-wrapper">   
+                    <img src="https://i.pinimg.com/736x/42/a8/50/42a85047dc3620d4c63056486de5e317.jpg">
+                </div> 
+
+            </div>
+
+            <div class="text">
+                <p>Только</p>
+                <p><em>горы!</em></p>
+                <p>Только</p>
+                <p><em>вперёд!</em></p>
+            </div>
+        </div>
+    </body>
+</html>
